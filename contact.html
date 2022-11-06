@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Alex Stennett Copywriting</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Alex Stennett">
+    <meta name="description" content="Copywriting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <nav class="main">
+        <h1 class="pagetitle">Alex Stennett Copywriting</h1>
+        <ul>
+            <li><a href="home.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><img src="icon/linkedin-icon-black.png"><img src="icon/mail-icon-black.png"></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h5>Need captivating copy?</h5>
+        <h2>Work with me</h2>
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Get in touch below</h3>
+                <input type="text" id="name" placeholder="Name*" required>
+                <input type="email" id="email" placeholder="Email*" required>
+                <input type="text" id="business" placeholder="Business name" required>
+                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                <text>*required</text>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "alex.stennett@hotmail.com",
+                    Password : "C77D9B8A5E03FC67976B23A0C52EA9984304",
+                    To : 'alex.stennett@hotmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "Name:" + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone no: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent Successfully")
+                );
+            }
+        </script>
+
+        <div class="p2">
+                <p> <em><b>Email: </b></em><a href="mailto:alex.stennett@hotmail.com">alex.stennett@hotmail.com</a><br>
+                    <em><b>Based: </b></em>Based in Brisbane, QLD Australia but services worldwide<br>
+                    <em><b>Portfolio: </b></em><a href="home.html#portfolio">Click here</a> to view my portfolio<br>
+                    <em><b>Services: </b></em>Copywriting,articles, blog post writing, sales pages, editing and proofreading 
+                </p>
+        </div>
+        <p></p>
+    </main>
+
+    <footer>
+        <!-- <img src="icon/LW-logo.png" alt="logo"> -->
+        <p class="top"><a href="#top">return to top</a></p>
+
+        <p class="legal">
+            All projects are my own work. I have permission to use all images that are otherwise not my own.
+        </p>
+    </footer>
+</html>

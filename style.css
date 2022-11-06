@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:wght@300&family=Noto+Sans:wght@300&display=swap');
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  
+
+}
+
+/**********************************
+  NAVIGATION
+  ***********************************/
+
+nav.main {
+  background-color: #f4afab;
+  font-family: 'Noto Sans', sans-serif;
+  min-height: 100vmax;
+  padding: 3px;
+  position: fixed;
+  width: 230px;
+  left: 0;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  /* background-color: #333; */
+  display: block;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav li a:hover {
+  background-color: #fdf6f8;
+}
+
+nav .active {
+  background-color: #fdf6f8;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/**********************************
+  HEADINGS
+  ***********************************/
+h1 {
+  font-size: 30px;
+  font-family: 'DM Serif Display', serif;
+  padding-left: 5px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
+  text-align: left;
+  padding-left:50px;
+  margin: 2%;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+h4 {
+  font-size: 22px;
+  padding-bottom: 60px;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+
+}
+
+h5 {
+  font-size: 35px;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  padding: 40px;
+  margin: 2%;
+}
+
+
+/**********************************
+  MAIN / BODY
+  ***********************************/
+
+div.mainhead {
+  /* background-color: #fdf6f8; */
+  background-color: #c7dcbc;
+  padding: 2%;
+}
+
+  main {
+  margin-left: 230px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Merriweather', sans-serif;
+  background-color: #fff;
+  /* background-color:#fdf6f8; */
+  font-size: 20px;
+}
+
+  text {
+  margin-left: 230px;
+  text-align: left;
+  padding: 10px;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 18px;
+  }
+
+p {
+  margin-top: 10px;
+  padding: 20px;
+}
+.p2 {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: left;
+}
+.column {
+  text-align: center;
+  width: 49%;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0px;
+}
+ul{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+
+ul.options {
+  text-align: center;
+  width: 49%;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0px;
+}
+
+li {
+  margin-top: 30px;
+}
+
+ul.skills li:before {
+  content: '✓ ';
+  list-style-type: none;
+  padding: 20px;
+}
+aside{
+  background-color: #e0ecda;
+  margin-top: 50px;
+}
+aside p{
+text-align: center;
+font-size: 18px;
+}
+aside h3{
+  margin-top: 5px;
+  font-size: 25px;
+}
+a:link {
+  color: #181be7
+}
+
+.image{
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 8px 8px 8px #000000; 
+}
+
+.contact{
+  font-size: 18px;
+  text-align: left;
+  line-height: 0%;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+/**********************************
+  BUTTON STYLING
+  ***********************************/
+p.button a{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  display: inline-block;
+  padding: 30px;
+  color: white;
+  background-color: #46752F;
+  text-decoration: none;
+  transition: 0.20s;
+  margin: 10px;
+  border-radius: 10px;
+  min-width: 120px;
+}
+p a:hover{
+  background-color: #c7dcbc;
+  color: black;
+}
+.button{
+  text-align: center;
+}
+  
+/**********************************
+  SLIDESHOW
+  ***********************************/
+
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+
+  .slides input{
+    display: none;
+  }
+
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+
+  .slide img{
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .focus{
+    color: #000000;
+    outline: none;
+  }
+  .manual-btn{
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 40px;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover{
+    background: #000000;
+  }
+
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+
+
+  /**********************************
+  EMAIL DROP FORM
+  ***********************************/
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
+}
+
+form{
+  background: #c7dcbc;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h3{
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #fff;
+  font-size: 16px;
+}
+
+form button{
+  padding: 15px;
+  background: #46752F;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+
+/**********************************
+  FOOTER STYLING
+  ***********************************/
+
+
+.top{
+  float: right;
+}
+
+footer {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #c7dcbc;
+  padding: 5px;
+  margin-left:230px
+}
+
+footer.imgCaption {
+  float: right;
+}
+
+.legal {
+  font-size: x-small;
+  text-align: center;
+}
+
